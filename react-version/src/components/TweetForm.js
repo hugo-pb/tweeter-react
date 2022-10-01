@@ -1,5 +1,7 @@
 import React from "react";
 
+const placeholder = "What are you humming about?";
+
 const TweetForm = () => {
   return (
     <section className="newtweet">
@@ -7,7 +9,7 @@ const TweetForm = () => {
         <textarea
           className="form__textarea"
           name="text"
-          placeholder="What are you humming about?"
+          placeholder={placeholder}
         ></textarea>
         <input type="submit" value="Tweet" className="form__input" />
         <span className="form__counter">140</span>
